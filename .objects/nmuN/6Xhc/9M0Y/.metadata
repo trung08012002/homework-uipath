@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Home  Udemy Business",
+  "Type": "Screen",
+  "Id": "9M0YmI9Y-EW_IUQO4EBdfw",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/9M0YmI9Y-EW_IUQO4EBdfw",
+  "ParentRef": "nCFTkx-kSUqniW2F95ecPQ/6Xhc9Umdqk2RGoMEK7Wxzw",
+  "Created": "2026-08-10T08:53:05.3474552Z",
+  "Updated": "2026-08-10T08:53:05.3474552Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

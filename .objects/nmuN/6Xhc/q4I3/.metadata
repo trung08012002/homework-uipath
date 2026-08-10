@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome LG.  Udemy Business",
+  "Type": "Screen",
+  "Id": "q4I31_lKCUK5MiZjpABvYg",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/q4I31_lKCUK5MiZjpABvYg",
+  "ParentRef": "nCFTkx-kSUqniW2F95ecPQ/6Xhc9Umdqk2RGoMEK7Wxzw",
+  "Created": "2026-08-10T08:56:11.5135146Z",
+  "Updated": "2026-08-10T08:56:11.5135146Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

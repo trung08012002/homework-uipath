@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Send (Ctrl+Enter)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "MchV6LARl02O8anH4ZSC9Q",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/MchV6LARl02O8anH4ZSC9Q",
+  "ParentRef": "nCFTkx-kSUqniW2F95ecPQ/SgNzGbKVrUSXxw7dsommFQ",
+  "Created": "2026-08-10T10:04:45.8090647Z",
+  "Updated": "2026-08-10T10:04:45.8090647Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

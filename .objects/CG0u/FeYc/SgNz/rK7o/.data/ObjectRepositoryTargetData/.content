@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ox1fpn5Q40CiiJO5MTzq3g" Reference="nCFTkx-kSUqniW2F95ecPQ/rK7opeuSo02a9nuZ4d824A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="980, 865, 121, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='Chrome_WidgetWin_1' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;&lt;ctrl name='Chat | 【FR Training】Training UiPath | Microsoft Teams' role='document' /&gt;&lt;ctrl name='Insert link' role='grouping' /&gt;&lt;ctrl name='Insert' role='push button' /&gt;" Guid="470229bf-c0c4-4949-a8c7-5ac1fd5bfb9a" ScopeSelectorArgument="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="78456636fbc67d51350317a4239ca02b.jpg" xmlns="">0pkCfZXUyf0uzdl5g8NSfdw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

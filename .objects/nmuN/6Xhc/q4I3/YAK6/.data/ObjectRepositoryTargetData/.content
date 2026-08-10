@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zkqLUawnF02HKqQnnzG0Aw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="lg.udemy.com" DesignTimeRectangle="710, 664, 499, 75" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='form-group--5' tag='INPUT' type='password' class='ud-text-input ud-text-input-medium ud-text-sm ud-compact-form-control password-form-group--password-input--yB71S ' aaname='Password' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b0b1c095-3d9c-426b-bd83-e5ca60062116" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LG. | Udemy Business' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="710, 674, 393, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='LABEL' class='ud-form-label ud-heading-sm' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Password' /&gt;" Guid="65654e32-d0eb-4e39-97ad-1284f5614cd0" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="cdfb2404364f10aed11f43301b1ef2aa.jpg" xmlns="">0T-iwzmLQUEuJuyctAX_uAQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Insert",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "rK7opeuSo02a9nuZ4d824A",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/rK7opeuSo02a9nuZ4d824A",
+  "ParentRef": "nCFTkx-kSUqniW2F95ecPQ/SgNzGbKVrUSXxw7dsommFQ",
+  "Created": "2026-08-10T11:23:18.8115436Z",
+  "Updated": "2026-08-10T11:23:18.8115436Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

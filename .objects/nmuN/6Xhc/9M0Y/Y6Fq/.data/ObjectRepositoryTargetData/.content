@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jFFavaMamkq9mk0ozYpwrw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="lg.udemy.com/organization/home" DesignTimeRectangle="272, 309, 1080, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" Guid="e62df1e9-9ea7-4dc0-96a2-3e5b71d7e8aa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Udemy Business' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5553f39e66a0ae39268dd27b3fc1a2af.jpg" xmlns="">020k6Uy1S9k2mJnl8sAVtew</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

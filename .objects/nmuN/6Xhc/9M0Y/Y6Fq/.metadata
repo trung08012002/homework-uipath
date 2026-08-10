@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Welcome back, Dai Ngo",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Y6FqBArjB0WnBP7NP2VR4w",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/Y6FqBArjB0WnBP7NP2VR4w",
+  "ParentRef": "nCFTkx-kSUqniW2F95ecPQ/9M0YmI9Y-EW_IUQO4EBdfw",
+  "Created": "2026-08-10T09:18:45.9797459Z",
+  "Updated": "2026-08-10T09:18:45.9797459Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

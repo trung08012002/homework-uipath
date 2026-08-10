@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Type a message",
+  "Type": "Element",
+  "Id": "LMAj0mAd-Em0p2_lXU5MEQ",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/LMAj0mAd-Em0p2_lXU5MEQ",
+  "ParentRef": "nCFTkx-kSUqniW2F95ecPQ/SgNzGbKVrUSXxw7dsommFQ",
+  "Created": "2026-08-10T10:04:11.2545622Z",
+  "Updated": "2026-08-10T10:04:11.2545622Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

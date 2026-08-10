@@ -1,0 +1,204 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TypeIntoMsteam" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Message" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>TypeIntoMsteam_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TypeIntoMsteam" sap:VirtualizedContainerService.HintSize="742,1928.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chat  【FR Training】Training UiPath  Microsoft" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1905.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="07811424-ea45-4535-8a25-8d3d0b5c93e8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1659.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Type a message(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="07811424-ea45-4535-8a25-8d3d0b5c93e8" Text="data.txt" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="2F9BOLq2AU2NSaLQcSWjpw" DesignTimeRectangle="663, 934, 960, 49" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='Chrome_WidgetWin_1' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;&lt;ctrl name='Chat | 【FR Training】Training UiPath | Microsoft Teams' role='document' /&gt;&lt;ctrl name='Type a message' role='editable text' /&gt;" Guid="427b1530-d7e2-4095-ae43-401b62ceec16" InformativeScreenshot="5c7eb642d3c9d8ab317c005703ab10fa.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/Fx4-mfk1t0yXmCeKD72inA" ScopeSelectorArgument="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'Type a message(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,328.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="07811424-ea45-4535-8a25-8d3d0b5c93e8" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)]" Version="V5">
+              <uix:NKeyboardShortcuts.Target>
+                <uix:TargetAnchorable ContentHash="2F9BOLq2AU2NSaLQcSWjpw" DesignTimeRectangle="663, 934, 960, 49" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='Chrome_WidgetWin_1' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;&lt;ctrl name='Chat | 【FR Training】Training UiPath | Microsoft Teams' role='document' /&gt;&lt;ctrl name='Type a message' role='editable text' /&gt;" Guid="427b1530-d7e2-4095-ae43-401b62ceec16" InformativeScreenshot="5c7eb642d3c9d8ab317c005703ab10fa.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/Fx4-mfk1t0yXmCeKD72inA" ScopeSelectorArgument="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NKeyboardShortcuts.Target>
+            </uix:NKeyboardShortcuts>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'Type a message(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,328.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="HardwareEvents" ScopeIdentifier="07811424-ea45-4535-8a25-8d3d0b5c93e8" Shortcuts="[d(hk)][d(ctrl)]k[u(ctrl)][u(hk)]" Version="V5">
+              <uix:NKeyboardShortcuts.Target>
+                <uix:TargetAnchorable ContentHash="2F9BOLq2AU2NSaLQcSWjpw" DesignTimeRectangle="663, 934, 960, 49" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='Chrome_WidgetWin_1' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;&lt;ctrl name='Chat | 【FR Training】Training UiPath | Microsoft Teams' role='document' /&gt;&lt;ctrl name='Type a message' role='editable text' /&gt;" Guid="427b1530-d7e2-4095-ae43-401b62ceec16" InformativeScreenshot="5c7eb642d3c9d8ab317c005703ab10fa.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/Fx4-mfk1t0yXmCeKD72inA" ScopeSelectorArgument="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NKeyboardShortcuts.Target>
+            </uix:NKeyboardShortcuts>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,317.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="07811424-ea45-4535-8a25-8d3d0b5c93e8" Text="[in_Message]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="Q4_HUnMuO06Q4kyHN7TJ0g" DesignTimeRectangle="764, 786, 336, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='Chrome_WidgetWin_1' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;ctrl name='Chat | 【FR Training】Training UiPath | Microsoft Teams' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Insert link' role='grouping' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Address' role='editable text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="d7e3741c-4780-4c09-b036-0ab662a368f1" InformativeScreenshot="42acb613abdc2f1ce4abca30e61ee196.jpg" IsResponsive="True" Reference="nCFTkx-kSUqniW2F95ecPQ/8bZlLt58BUaHgUsgyCuzXA" ScopeSelectorArgument="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="763, 756, 62, 24" ElementType="Text" FuzzySelectorArgument="&lt;wnd cls='Chrome_WidgetWin_1' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;ctrl name='Chat | 【FR Training】Training UiPath | Microsoft Teams' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Insert link' role='grouping' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Address' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Address' /&gt;" Guid="c713c29a-68a8-49da-b20e-500fc5f5f224" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Target>
+                    <uix:TargetAnchorable ContentHash="8hlAUwDTtkCwqGCDJEZSFA" DesignTimeRectangle="742, 604, 380, 330" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='Chrome_WidgetWin_1' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;&lt;ctrl name='Chat | 【FR Training】Training UiPath | Microsoft Teams' role='document' /&gt;&lt;ctrl role='dialog' /&gt;" Guid="f2e8850c-d693-4a47-8b2a-8f7b943bf8f2" InformativeScreenshot="f999dcdac088f0538c9133b7ee75d66d.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/aVwgndL-WU-bqnjZe1G-vQ" ScopeSelectorArgument="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                  </uix:VerifyExecutionTypeIntoOptions.Target>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Insert'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="07811424-ea45-4535-8a25-8d3d0b5c93e8" Timeout="30" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="ox1fpn5Q40CiiJO5MTzq3g" DesignTimeRectangle="980, 865, 121, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='Chrome_WidgetWin_1' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;&lt;ctrl name='Chat | 【FR Training】Training UiPath | Microsoft Teams' role='document' /&gt;&lt;ctrl name='Insert link' role='grouping' /&gt;&lt;ctrl name='Insert' role='push button' /&gt;" Guid="470229bf-c0c4-4949-a8c7-5ac1fd5bfb9a" InformativeScreenshot="78456636fbc67d51350317a4239ca02b.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/rK7opeuSo02a9nuZ4d824A" ScopeSelectorArgument="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Send (Ctrl+Enter)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="07811424-ea45-4535-8a25-8d3d0b5c93e8" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="RnU9VmMUMkSCqIynOJ1tpg" DesignTimeRectangle="1753, 940, 40, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='Chrome_WidgetWin_1' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;&lt;ctrl name='Chat | 【FR Training】Training UiPath | Microsoft Teams' role='document' /&gt;&lt;ctrl name='Actions for new message' role='tool bar' /&gt;&lt;ctrl name='Send (Ctrl+Enter)' role='push button' /&gt;" Guid="b9dbe0b8-86c1-40ee-92a2-372176febc08" InformativeScreenshot="f17c045d582ecf43adc7f6879e0911c4.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/MchV6LARl02O8anH4ZSC9Q" ScopeSelectorArgument="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" ContentHash="2RtWkq4G_0qGH-Wa0VGcvw" FilePath="MSTeams_8wekyb3d8bbwe!MSTeams" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAyNSURBVFhH7Zhnc1Rnmob5Cf4DO8NszU7NjA0MwUSBAkgggYQCKIdWalo5BxRbWSinVkCAMBbBJoOxMQwIbGzAjBHgQK4mJwkJBehWeq6pc4SpmRbUwu7an/aueut8OU/VVfcT3uecSZPeUm1tvNe6eyx30w7paNsyykcbR2lvGetsbxgNsnz3N1f1dtPk5r1jxta9woad0LYN2bIZaV8vbG8cY0ftsHF7tWmyZdxvpoa9Y8bm/bB+P7TuhA3tsHETfNQibDUInzaI7K4dNrZV855l7K+uut2jmoZ9QuMBaN4HzZ9AyxZY3wobGmFzvbCtXvi0bpRPqk16y/hfXbV7xjrr9wuGA2DYBYatYNiEGJqguR5aq2FzrdBeO0Z7lbnDMv4XlTSZbMobzR0VNUO9lWVmqgtNHdX6QY3le++sml3D1O0do3431O1AajdDbQtSWwf1VUhjJdJaJWysHGVTmVks4xUVtQzllrYMU94yQkXdiFRUDEtV8TA1ehP1OaZcy/ffSRXbzFRtG6GqXaRqM1S2QEU9UlkJVWVQVy40lI1iKBnCUPgcy/icBlNQQfMQJa0jUto0Qkn1MKXrhqUsf4jKHDP1uSYas03WlnFvrZL1gx0lzSZKm4YobRilpEakpEwoKUbKisekrHhUygvMVOY9l4rcvk7LeH2jqSO/eZiilhEK6kYkv2yY/IIh8rPMlGSaqcw2S1Xm4BtL479VTvlTfU7pM7JLBiS74DnZuS/IzDBJdoaJ3MwX5GU+Jz+jn4L0Z1KU3j2hpvSGF5LXOERO3Yhklw2RVTBEVpaZzFQzeWuHKE43ybq0gV7LuLdWvL73vZS0x8bEpC5JjO8mIbqbxJgekuN6SInrlZS4p5IW1y1r4x8bLWMVZVYM9GSUP2dtiZm0fDMpGWaSkkykJpolM9lEdtIAuQm9E0rjnaTTGSdrg24Z1wTdQae5iy74HhHB9yUy9B5RofeICb9njNcZXzuoE7J7OhIye4lL7yMmaZComEFiop4THz1AQnQfydE9JEd0/c9T/K8K8b6hCfa82RnsdQON13WCvW90hPnezI3XGN84oCMSHlprIx8SFv5YgjVPJDiwi9CgLsI1XaILeUJkyENiQu5NKI3fVL7exlwfDyPebrfEx+M2vqtu47/6NkFetwjxNf72w/118lh2OcjD8XKHu+MV3J2u9Kxeca3D2/W6jeV7by39Xt4rOEpu3hcY8w5B3kFEvw/yd0PhJ1C6DSn/GKo3I3UbwdAKLevp3NhMW1MTr63H/zPpv2By/mGM+YfhJRz6/aDfC3m7kMIdULoVyrZAVRvUblABpbkFWptgUxPGpupfCVKBU137XIWTvM8Q/QFQ3NPvQfJ2QuF2KNkK5VugUgHciNSvh6YWaGmC1kaoLn2B3Yxj2M3owGn+WdzsLuHjdJ1g93tEeD8mPrBH1oYPdOqjTG36+HdY1fSHaMtXXPtMPa/gcvdA7i7I24kUbIfidij7CKnYBNUboG49GFqgUVkimpBmA0RqbmA344Q4LTiLu90lfJffUAAl0ucxCUE9rNUOkB89JKWJY8aGTH5vyfJa5R3gvAq1H/L2j9edfg/k7EZydiG5n0D+NqRoC5RshrJNULkBatZDXTPUN0KDARrqobRIcfEEKuDiH14C3mUcsFdxkLxoM+sSx2jIxNimf8M+mVU2FpdaNNKbmGcmNmuQyLRnaJO6CYt7TEjUA4J1dwnW3iE4/BZh2ttExt0ntegZRZugdCOUt44vEVVNUG2AmgaoqUeq6xAVcP64g/+aYtXB8AHJjzbLusQxaciAjXomjpzUdWO5yUUjxOWZicoaRJvWR0hiN4Gxj/CLuItP2C08g27gGXANL/+rePtewc/vKpqg66QW9FK8AUpboawZyhuhwqBuO1TUQXkNqoOO88+oDqqAbncVQEkIfEp6+IDoo0yUJIxSkw7rc5l4XSYUDBlj9CZ0WYOEZ/QRlPwU//hHeEfcZVWYEbega6z0vYyL5w84u1/Axe0Crm4XWO1xEX+/KxS0IkUtUNwEJQZYZ0DW1SOltUhJtQL4sklsL4m343XRjAOSENhDWli/5ESapDh+VCpTRUnzxDs5Kvs52swBQtKeEZjSTdWmZ5w4+4ITpwc4fqqPY1/1cvRED0eOPyW38Br2jqdxWHoap2VncXX+B/r1kN8MBY1QaEAK66GwFgqqIb8K7KYfVx10VQCdrqFxvcMar0cSF9BNakif5ES8oCh2RMqSharU1wCGpvVJUMpT/JOe4B3/gJ2f9/Mmbd5yGxu7E1hbd2Bnc4Kli0+R3Qw5TaA3gL4e9LWIvhpyKyG7HGymH5dlc0/LSpuL4rXsKkFud9B6PiTWv4uUkGdk6Z6THzNEacKoCmnJNykwsQu/hEd4x93HM/ouQYl30KXfJjzpxiuwAO0l/ILPs8LtWxbZHGPB/C+xmvsl1vP/TkYTkmFAMushqw7JrEEyqyCjAtauA5u/HWPp3G9ZadOJ17IrBK68TfjqhxLj30WSppcM7QBKHRbFDktxwshEQO/oe3hG3WFVxC3ctTdxC73OyqArOPv9+ArQ3vksdstOYW13AquFR5k/9wvmzDzIvJmHWGuA9HpIr4X0GiS9EtIrILUMSS0ZB3SY8w0uizrFc+llAlyMhK26T5TvExI1PaSH95MdMe5iYezwxG+aVdpb4h52U9xCb4hr8FVcAi+zwvdHnLwuvgJc7PgNNktOssj6GPPnH2bOrM/4cNpePpyydxyuDtKqIa0KUiuQ1DJIKUWSixHraX/HYfYpnBd+zyr7n8Xf2UiIhzpqJD7wKamhfWRoB9VmyYt6zUeX4pYC5RLwEyv8fpLl3pdw8rzAMvfvXwHa2n/FIpvjLFhwhLmzP2f29P3M/GA30//8KWl1SFoNYgGHApeUD4umHBX7D79mxcJ/4LHkR3yX31Rnoc7rEWqag3tVFzN1gygNY8k3ydn3B1Qor4s4ru5kmcd5HFzPYe985hXgItvjamrnzfmC2TMPMGvqXqb/5VOm/dd21bnUShVOSSuppZBSDMkFkJgLC6cckcUzT7Lc6jvc7X5QR02Qq1KHD5Q0izKwlWZRbhWlHi35Jjl6nGep+/ey1O17cXA5J0q9LVl+Wq25X2RldYR5St3NOsiH0/Yx4687Vbgpf2gntQpRnEspQ146h+KcAhefiSyc8uX4dTf/LK62F1E6OcDltoSueiARPo+J9e8mUfNMUkL6SAvrmwi41OU77FecUaGUWrNbegpb+5NqQ/yieXM+V5tChXt/F3/70w4VbsrkdlLLIXXdy7QWQVIBkqhHErIgfi1YfXAY2+kdsmzuGXGx7pTVDpfxczaqaV7j+ZBovyfEBT4VpWGSg1/z8eSw/Cx2DqfUJrBefFKs7TrUUaKk9NChexw6eJfZMw6oTTHjr7uY9qcdTP3Prbz/H5uZOnnrOFwJJBX+u3Nxa4XYFFEB1U6e/Q3OC8+Lx5KfRFkalDSHrb6PzvuxRPt1S1xgt3o/W/JNsl96ptd28XiHLlx4lAVWR9ROVV2bdVBtiFlT94yn9aVz7//uI6b87mPmTz2ouqbWWx6SkC0kZEJcugIHMYmI1fuHZdHUoyiNsnzBOVH2QiXN/i63RNlslKEd4f2IaN8natNY8k2ytz8TZ2f7FQutxptg3uxDajoVMMW1me+Pd+vUPyo19/EruOl/2I6Hx08k5gqJOUJ8phC/VohLFWKThJh4ITpWWGb1HUodKo3iNO8MK20uyGqHK+K34qZ6q4R43Bet50OJ8HlEhM/jCX8mVDnYfa23XdRhtJpzmDkzDsqsqftEHSN/2anW29Q/bhuvud9/zLTJW5n95z14rrpCbPoIsWmjxKSMEJM0QnTCqETFjRAVM0Jk1CgRuhHcHa9i9cGXYjv9OEvnfIvzovOibDbejtdQZqKyPISuuo/W8wE674fv9vkZlzZcHZU8JNHJZqKTxk9U4pBEJZiJijcTGWcmIsaELtqMLtKELsLEmjVm1mjNaMPMhIeaCQkYxHbGCcYH9tc4qWm+yGqHn9UFVrn6FMgQj/sTV623kS5mUKON6DeG6/pRTtiafsK0/YSF9xMa1k9YWD+hIQMSEtJPiKafkKB+ggP7CfbvR+M7fvzcu8Vu5kmWzPoKx3lncLE+rw5tpRaVVAeuvGXUuL7+z8RbS6Pp1gQFdHcE+nf3Bvp3EeDXhb9vFwG+Xfj7dOHn1YW/18unZxe+q14e9/Hj49aFm/01HBecY4XVOdxsL7La/ucOb6erelfXN/+Z+H/9b/VPvmqXba0egNUAAAAASUVORK5CYII=" InformativeScreenshot="8f7b9107c9a60a03a5d5087eb92444f6.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/SgNzGbKVrUSXxw7dsommFQ" Selector="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;" Version="V3">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

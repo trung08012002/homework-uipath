@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chat  【FR Training】Training UiPath  Microsoft Teams",
+  "Type": "App",
+  "Id": "CG0uZ4hXckWxu9AN3p9flw",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/CG0uZ4hXckWxu9AN3p9flw",
+  "Created": "2026-08-10T10:03:53.1276743Z",
+  "Updated": "2026-08-10T10:03:53.1276743Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

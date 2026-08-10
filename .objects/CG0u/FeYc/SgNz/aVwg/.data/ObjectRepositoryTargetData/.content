@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8hlAUwDTtkCwqGCDJEZSFA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="742, 604, 380, 330" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='Chrome_WidgetWin_1' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;&lt;ctrl name='Chat | 【FR Training】Training UiPath | Microsoft Teams' role='document' /&gt;&lt;ctrl role='dialog' /&gt;" Guid="f2e8850c-d693-4a47-8b2a-8f7b943bf8f2" ScopeSelectorArgument="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f999dcdac088f0538c9133b7ee75d66d.jpg" xmlns="">0HEW278c1GEapniXsq7Q-Rg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

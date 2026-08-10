@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Type Into 'Address'",
+  "Type": "Element",
+  "Id": "aVwgndL-WU-bqnjZe1G-vQ",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/aVwgndL-WU-bqnjZe1G-vQ",
+  "ParentRef": "nCFTkx-kSUqniW2F95ecPQ/SgNzGbKVrUSXxw7dsommFQ",
+  "Created": "2026-08-10T11:27:34.5793037Z",
+  "Updated": "2026-08-10T11:27:34.5793037Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
