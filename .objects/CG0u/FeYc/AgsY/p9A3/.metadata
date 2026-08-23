@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click 'Insert'",
+  "Type": "Element",
+  "Id": "p9A3PpOXqkmEIAJ5iP2mwQ",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/p9A3PpOXqkmEIAJ5iP2mwQ",
+  "ParentRef": "nCFTkx-kSUqniW2F95ecPQ/AgsY7-VhLUGALu41CIbo-w",
+  "Created": "2026-08-23T09:35:32.8558532Z",
+  "Updated": "2026-08-23T09:35:32.8558532Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

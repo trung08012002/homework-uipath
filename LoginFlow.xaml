@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="LoginFlow" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="LoginFlow_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="LoginFlow" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="LoginFlow_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -90,40 +90,45 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="LoginFlow" sap:VirtualizedContainerService.HintSize="611.6,1322.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="LoginFlow" sap:VirtualizedContainerService.HintSize="866.8000000000001,1201.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="outdictconfig">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">InvokeWorkflowFile_1</x:String>
+            <x:String x:Key="SourcePropertyName">out_dictConfig</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome LG.  Udemy Business" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1299.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6cc87475-71a6-4749-b130-d6774100a4bb" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome LG.  Udemy Business" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1155.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6cc87475-71a6-4749-b130-d6774100a4bb" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1104.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="LgUserName" />
-              <Variable x:TypeArguments="ss:SecureString" Name="LgUserPassword" />
-            </Sequence.Variables>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,984" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="LoginLgUdemy" CacheStrategy="None" DisplayName="Get Credential" FolderPath="hoaitrung.2k2@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="416,175.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[LgUserPassword]" Username="[LgUserName]" />
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email address'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Text="[LgUserName]" Version="V5">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="EnvironmentReader - Invoke Workflow File (EnvironmentReader.xaml)" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="EnvironmentReader.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="out_dictConfig">[outdictconfig]</OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT userId'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Text="[outdictconfig(&quot;USER_ID&quot;)]" Version="V5">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="lg.udemy.com" ContentHash="gkDyHpepU0m5MdXXkhFEHA" DesignTimeRectangle="238, 555, 498, 75" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='form-group--3' tag='INPUT' type='text' class='ud-text-input ud-text-input-medium ud-text-sm ud-compact-form-control' aaname='Email address' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="16145b17-f0f9-4027-bacf-22e8f7387fe7" InformativeScreenshot="ec51cb10d640effc8bc361dba8fea832.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/zw8ta8N2wEi3jXuCkheKCw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LG. | Udemy Business' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                      <uix:Target DesignTimeRectangle="238, 580, 498, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='LABEL' class='ud-form-label ud-heading-sm' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Email address' /&gt;" Guid="7358dc61-da70-4863-ab1d-a8ccbf23d84c" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
+                <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="gGtbhkPpLEWkkdGRYMvk7A" DesignTimeRectangle="295, 495, 425, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='userId' tag='INPUT' /&gt;" Guid="b57a6699-6181-4dc5-89f7-7e713640319a" InformativeScreenshot="bdf7d7df8a4a0aeb2c6e8c29eb1ab7d6.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/Jn79dX9KnkOToZdHjeUrXQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NTypeInto.Target>
               <uix:NTypeInto.VerifyOptions>
                 <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
@@ -136,26 +141,9 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Version="V5">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="lg.udemy.com" ContentHash="d12-o3uLX0GjDyT5mXV7kQ" DesignTimeRectangle="709, 663, 501, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='ud-btn ud-btn-medium ud-btn-brand ud-btn-text-sm organization-login-form--submit-button--lsJm5' aaname='Continue' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Continue' /&gt;" Guid="309ba704-51a4-4932-92d7-167b111e3102" InformativeScreenshot="fbc473cc883e4458d70df49e548126b3.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/Po4_KM45U0mkihuf7Sya4Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LG. | Udemy Business' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                      <uix:Target DesignTimeRectangle="922, 678, 75, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Continue' class='ud-btn-label' parentid='lg' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Continue' /&gt;" Guid="daa632e2-6a4b-4f63-a4cc-f858be4b77d4" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NClick.Target>
-            </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" SecureText="[LgUserPassword]" Timeout="120" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Text="[outdictconfig(&quot;PASSWORD&quot;)]" Version="V5">
               <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="lg.udemy.com" ContentHash="zkqLUawnF02HKqQnnzG0Aw" DesignTimeRectangle="710, 664, 499, 75" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='form-group--5' tag='INPUT' type='password' class='ud-text-input ud-text-input-medium ud-text-sm ud-compact-form-control password-form-group--password-input--yB71S ' aaname='Password' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b0b1c095-3d9c-426b-bd83-e5ca60062116" InformativeScreenshot="cdfb2404364f10aed11f43301b1ef2aa.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/YAK6SaaEgkyjOUvW1PgOPA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LG. | Udemy Business' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                      <uix:Target DesignTimeRectangle="710, 674, 393, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='LABEL' class='ud-form-label ud-heading-sm' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Password' /&gt;" Guid="65654e32-d0eb-4e39-97ad-1284f5614cd0" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
+                <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="yDc26W4jC0aTDMBItigzzw" DesignTimeRectangle="295, 554, 425, 44" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="3eec389e-bed3-45a3-8c0e-706a2a4baa3d" InformativeScreenshot="e98dcb4b09aab8cc21512f98db750637.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/fnZ3HFOwwEq3mt7YUAJDQQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NTypeInto.Target>
               <uix:NTypeInto.VerifyOptions>
                 <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
@@ -168,16 +156,20 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log In'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SIGN IN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,256.8" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="lg.udemy.com" ContentHash="Fgyqg6n4G0SDKKC0KaFHrQ" DesignTimeRectangle="709, 812, 501, 50" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='ud-btn ud-btn-medium ud-btn-brand ud-btn-text-sm organization-login-form--submit-button--lsJm5' aaname='Log In' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Log In' /&gt;" Guid="e809d074-65cd-48d3-96a8-aafacf13017a" InformativeScreenshot="84dca0cdf5bdcc1357a96c05bc6287e0.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/G2QB7rNhk0-QKnTUQgkWjA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LG. | Udemy Business' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                      <uix:Target DesignTimeRectangle="934, 827, 51, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Log In' class='ud-btn-label' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Log In' /&gt;" Guid="0a205048-7858-406a-bfc7-e0f01fbc21a5" SearchSteps="FuzzySelector" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
+                <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="gKKCvqAeYUuvIfjT5di9-A" DesignTimeRectangle="295, 613, 425, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="10fb2afa-7b44-4003-a233-9116bdec862b" InformativeScreenshot="84a1ec18b3283893654e465c8c8927d2.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/M75cpguOUEOyW0HITtnYzQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions Mode="Appears">
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="m-__ZYX6MkSGjymLC3Mxzg" DesignTimeRectangle="297, 615, 425, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="1c4ae170-625f-472c-b851-a87c355f1e5b" InformativeScreenshot="649008604d625ece61a3e0ea64dd1b4b.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/3Rm4MjT3G0aLLLTnqZ2TNA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
             </uix:NClick>
           </Sequence>
         </ActivityAction>
@@ -190,7 +182,14 @@
         </ActivityFunc>
       </uix:NApplicationCard.OCREngine>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="926, 4, 993, 1026" BrowserType="Chrome" ContentHash="vpdSJHwYKU6B-jBtCVHYzg" IconBase64="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" InformativeScreenshot="c316fd0cd3ff3959125c2a07575668a6.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/q4I31_lKCUK5MiZjpABvYg" Selector="&lt;html app='chrome.exe' title='LG. | Udemy Business' /&gt;" Url="https://lg.udemy.com/?next=%2Forganization%2Fhome%2F" Version="V3" />
+        <uix:TargetApp Area="-34, 0, 1014, 1023" BrowserType="Chrome" ContentHash="EmUvoPhTv0aUiL2Po2c-Ig" IconBase64="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" InformativeScreenshot="0d14af53ade39a6183f192a982c5a3d9.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/q4I31_lKCUK5MiZjpABvYg" Selector="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" Url="https://dokokin.fjpservice.com/login?logout=true&amp;url=%2Fhome" Version="V3">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>

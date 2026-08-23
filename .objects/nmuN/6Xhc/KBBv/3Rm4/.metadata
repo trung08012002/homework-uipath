@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'SIGN IN'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "3Rm4MjT3G0aLLLTnqZ2TNA",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/3Rm4MjT3G0aLLLTnqZ2TNA",
+  "ParentRef": "nCFTkx-kSUqniW2F95ecPQ/KBBv3eCiYUeDhJXmsvZccg",
+  "Created": "2026-08-23T08:40:45.9188733Z",
+  "Updated": "2026-08-23T08:40:45.9188733Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

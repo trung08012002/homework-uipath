@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gGtbhkPpLEWkkdGRYMvk7A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dokokin.fjpservice.com/login" DesignTimeRectangle="295, 495, 425, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='userId' tag='INPUT' /&gt;" Guid="b57a6699-6181-4dc5-89f7-7e713640319a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bdf7d7df8a4a0aeb2c6e8c29eb1ab7d6.jpg" xmlns="">0lvRtn8j7O0KxKGf5q2Q7gg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

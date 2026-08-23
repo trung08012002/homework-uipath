@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Working Time Change - Dokokin Portal",
+  "Type": "Screen",
+  "Id": "j0KsNbtVIEmvYk5lJZgczw",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/j0KsNbtVIEmvYk5lJZgczw",
+  "ParentRef": "nCFTkx-kSUqniW2F95ecPQ/6Xhc9Umdqk2RGoMEK7Wxzw",
+  "Created": "2026-08-23T06:27:52.7611356Z",
+  "Updated": "2026-08-23T06:27:52.7611356Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

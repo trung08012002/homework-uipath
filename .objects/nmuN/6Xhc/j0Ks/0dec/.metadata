@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Working Time Change",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "0dechbDbAUWxqv-gpCeOOA",
+  "Reference": "nCFTkx-kSUqniW2F95ecPQ/0dechbDbAUWxqv-gpCeOOA",
+  "ParentRef": "nCFTkx-kSUqniW2F95ecPQ/j0KsNbtVIEmvYk5lJZgczw",
+  "Created": "2026-08-23T06:28:42.5376414Z",
+  "Updated": "2026-08-23T06:28:42.5376414Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

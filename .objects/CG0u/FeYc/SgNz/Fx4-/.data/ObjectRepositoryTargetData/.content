@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="2F9BOLq2AU2NSaLQcSWjpw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="ebztRk0Ap0mnLVAmyVa8Xw" Reference="nCFTkx-kSUqniW2F95ecPQ/Fx4-mfk1t0yXmCeKD72inA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="663, 934, 960, 49" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='Chrome_WidgetWin_1' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;&lt;ctrl name='Chat | 【FR Training】Training UiPath | Microsoft Teams' role='document' /&gt;&lt;ctrl name='Type a message' role='editable text' /&gt;" Guid="427b1530-d7e2-4095-ae43-401b62ceec16" ScopeSelectorArgument="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Microsoft Teams' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="5c7eb642d3c9d8ab317c005703ab10fa.jpg" xmlns="">0ssG3MyTsCE-BeVtvd9B5Og</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="478, 670, 419, 26" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='*【FR Training】Training UiPath*' /&gt;&lt;ctrl role='document' /&gt;&lt;ctrl name='Type a message' role='editable text' /&gt;&lt;ctrl role='grouping' /&gt;" Guid="c7d3549b-e4b7-4702-834c-8f0b41a5a9f1" ScopeSelectorArgument="&lt;wnd app='ms-teams.exe' appid='MSTeams_8wekyb3d8bbwe!MSTeams' title='Chat | 【FR Training】Training UiPath | Personal | hoaitrung.2k2@g*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5576356fcfe11eeac00c2d6e4e2e2f06.jpg" xmlns="">0RtmRkCkXFEWtsArAxiYNNg</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">TypeInto</x:String>
   </ObjectRepositoryTargetData.Data>
