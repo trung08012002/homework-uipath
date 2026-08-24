@@ -111,7 +111,7 @@
       <AssemblyReference>NPOI.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="EnvironmentReader" sap:VirtualizedContainerService.HintSize="866.8000000000001,478.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="EnvironmentReader" sap:VirtualizedContainerService.HintSize="756.4000000000001,561.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable1" Name="dtConfig" />
     </Sequence.Variables>
@@ -120,43 +120,50 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="environments" BrowserItemId="https://docs.google.com/spreadsheets/d/1zsQjJHwYRIV219fh4eoNr16XlWLw8A8OYTALngKe1Qw/edit?usp=drivesdk" ConnectionId="7ce8c50a-2602-46d7-af1a-865aa4f55369" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="449.6,289.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="Sheet1" ReadAs="[UiPath.GSuite.Sheets.Enums.ValuesType.Text]" Result="[dtConfig]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
-      <uga:ReadRangeConnections.ColumnNames>
-        <x:Array Type="x:String">
-          <x:String>KEY</x:String>
-          <x:String>VALUE</x:String>
-        </x:Array>
-      </uga:ReadRangeConnections.ColumnNames>
-      <uga:ReadRangeConnections.FileIdBackup>
-        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
-          <usau:BackupSlot.BackupValues>
-            <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
-          </usau:BackupSlot.BackupValues>
-        </usau:BackupSlot>
-      </uga:ReadRangeConnections.FileIdBackup>
-      <uga:ReadRangeConnections.Item>
-        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1zsQjJHwYRIV219fh4eoNr16XlWLw8A8OYTALngKe1Qw/edit?usp=drivesdk" ConnectionKey="021cbcfb-ca18-4d8a-bc77-d15ee0292950" FriendlyName="environments" FullPathHint="My Drive/uipath/environments/environments" InputMode="Browse">
-          <ugam:DriveItemArgument.DriveId>
-            <InArgument x:TypeArguments="x:String" />
-          </ugam:DriveItemArgument.DriveId>
-          <ugam:DriveItemArgument.ParentIdFullPathHint>
-            <InArgument x:TypeArguments="x:String">
-              <Literal x:TypeArguments="x:String" Value="" />
-            </InArgument>
-          </ugam:DriveItemArgument.ParentIdFullPathHint>
-        </ugam:DriveItemArgument>
-      </uga:ReadRangeConnections.Item>
-      <uga:ReadRangeConnections.RangeMetadata>
-        <ugsm:RangeMetadataSlim ColumnStart="1" RangeType="Range" />
-      </uga:ReadRangeConnections.RangeMetadata>
-    </uga:ReadRangeConnections>
-    <Assign sap:VirtualizedContainerService.HintSize="449.6,165.6" sap2010:WorkflowViewState.IdRef="Assign_1">
-      <Assign.To>
-        <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[out_dictConfig]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[dtConfig.AsEnumerable().ToDictionary(Function(row) row("KEY").ToString, Function(row) row("VALUE").ToString)]</InArgument>
-      </Assign.Value>
-    </Assign>
+    <Sequence DisplayName="EnvironmentReader" sap:VirtualizedContainerService.HintSize="449.6,538.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="environments" BrowserItemId="https://docs.google.com/spreadsheets/d/1zsQjJHwYRIV219fh4eoNr16XlWLw8A8OYTALngKe1Qw/edit?usp=drivesdk" ConnectionId="7ce8c50a-2602-46d7-af1a-865aa4f55369" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="416,289.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="Sheet1" ReadAs="[UiPath.GSuite.Sheets.Enums.ValuesType.Text]" Result="[dtConfig]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+        <uga:ReadRangeConnections.ColumnNames>
+          <x:Array Type="x:String">
+            <x:String>KEY</x:String>
+            <x:String>VALUE</x:String>
+          </x:Array>
+        </uga:ReadRangeConnections.ColumnNames>
+        <uga:ReadRangeConnections.FileIdBackup>
+          <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
+            <usau:BackupSlot.BackupValues>
+              <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+            </usau:BackupSlot.BackupValues>
+          </usau:BackupSlot>
+        </uga:ReadRangeConnections.FileIdBackup>
+        <uga:ReadRangeConnections.Item>
+          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1zsQjJHwYRIV219fh4eoNr16XlWLw8A8OYTALngKe1Qw/edit?usp=drivesdk" ConnectionKey="021cbcfb-ca18-4d8a-bc77-d15ee0292950" FriendlyName="environments" FullPathHint="My Drive/uipath/environments/environments" InputMode="Browse">
+            <ugam:DriveItemArgument.DriveId>
+              <InArgument x:TypeArguments="x:String" />
+            </ugam:DriveItemArgument.DriveId>
+            <ugam:DriveItemArgument.ParentIdFullPathHint>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String" Value="" />
+              </InArgument>
+            </ugam:DriveItemArgument.ParentIdFullPathHint>
+          </ugam:DriveItemArgument>
+        </uga:ReadRangeConnections.Item>
+        <uga:ReadRangeConnections.RangeMetadata>
+          <ugsm:RangeMetadataSlim ColumnStart="1" RangeType="Range" />
+        </uga:ReadRangeConnections.RangeMetadata>
+      </uga:ReadRangeConnections>
+      <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[out_dictConfig]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[dtConfig.AsEnumerable().ToDictionary(Function(row) row("KEY").ToString, Function(row) row("VALUE").ToString)]</InArgument>
+        </Assign.Value>
+      </Assign>
+    </Sequence>
   </Sequence>
 </Activity>
