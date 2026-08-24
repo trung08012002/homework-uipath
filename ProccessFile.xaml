@@ -117,7 +117,7 @@
       <AssemblyReference>NPOI.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="WriteTextToFile" sap:VirtualizedContainerService.HintSize="866.8000000000001,1045.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="WriteTextToFile" sap:VirtualizedContainerService.HintSize="762.4000000000001,431.65666666666664" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ugdm:GDriveRemoteItem" Name="UploadedFile" />
       <Variable x:TypeArguments="ugdm:GDriveRemoteItem" Name="NewSpreadSheet" />
@@ -128,71 +128,102 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uga:CreateSpreadsheetConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualEntryParentFolderId="{x:Null}" ParentFolderExisting="{x:Null}" AuthScopesInvalid="False" BrowserParentFolderFriendlyName="uipath" BrowserParentFolderId="https://drive.google.com/drive/folders/19rA1zZToNn9h62f9NN-qVmUq2yHlRIbu" ConflictResolution="Rename" ConnectionId="5c6e0fe3-808c-449f-acb3-ed691272453d" DisplayName="Create Spreadsheet" FirstSheetName="Sheet1" sap:VirtualizedContainerService.HintSize="449.6,236.8" sap2010:WorkflowViewState.IdRef="CreateSpreadsheetConnections_4" NewSpreadsheet="[NewSpreadSheet]" ParentFolderInputMode="Browse" SpreadsheetName="data" UseConnectionService="True">
-      <uga:CreateSpreadsheetConnections.Item>
-        <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/19rA1zZToNn9h62f9NN-qVmUq2yHlRIbu" ConnectionKey="5c6e0fe3-808c-449f-acb3-ed691272453d" FriendlyName="uipath" FullPathHint="My Drive/uipath" InputMode="Browse">
-          <ugam:DriveItemArgument.Backup>
-            <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
-              <usau:BackupSlot.BackupValues>
-                <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
-              </usau:BackupSlot.BackupValues>
-            </usau:BackupSlot>
-          </ugam:DriveItemArgument.Backup>
-          <ugam:DriveItemArgument.DriveId>
-            <InArgument x:TypeArguments="x:String" />
-          </ugam:DriveItemArgument.DriveId>
-          <ugam:DriveItemArgument.ParentIdFullPathHint>
-            <InArgument x:TypeArguments="x:String">
-              <Literal x:TypeArguments="x:String" Value="" />
-            </InArgument>
-          </ugam:DriveItemArgument.ParentIdFullPathHint>
-        </ugam:DriveItemArgument>
-      </uga:CreateSpreadsheetConnections.Item>
-    </uga:CreateSpreadsheetConnections>
-    <uga:WriteRangeConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" ConnectionId="021cbcfb-ca18-4d8a-bc77-d15ee0292950" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="449.6,445.6" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="False" ItemSelectionMode="UseExisting" Range="Sheet1" RowPosition="0" Source="[in_Data]" Spreadsheet="[NewSpreadSheet]" TemplateBrowserItemFriendlyName="data" TemplateBrowserItemId="https://docs.google.com/spreadsheets/d/1imGqmMdPWeZ7wAUjePFItPdewdLmkxLmcOqwVXADquc/edit?usp=drivesdk" UseConnectionService="True" WorkingWithTemplateSpreadsheet="True" WriteMode="Overwrite">
-      <uga:WriteRangeConnections.FileIdBackup>
-        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UseExisting">
-          <usau:BackupSlot.BackupValues>
-            <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
-              <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/1imGqmMdPWeZ7wAUjePFItPdewdLmkxLmcOqwVXADquc/edit?usp=drivesdk</InArgument>
+    <Sequence DisplayName="ProccessFile" sap:VirtualizedContainerService.HintSize="449.6,278.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uga:CreateSpreadsheetConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualEntryParentFolderId="{x:Null}" ParentFolderExisting="{x:Null}" AuthScopesInvalid="False" BrowserParentFolderFriendlyName="uipath" BrowserParentFolderId="https://drive.google.com/drive/folders/19rA1zZToNn9h62f9NN-qVmUq2yHlRIbu" ConflictResolution="Rename" ConnectionId="5c6e0fe3-808c-449f-acb3-ed691272453d" DisplayName="Create Spreadsheet" FirstSheetName="Sheet1" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="CreateSpreadsheetConnections_4" NewSpreadsheet="[NewSpreadSheet]" ParentFolderInputMode="Browse" SpreadsheetName="data" UseConnectionService="True">
+        <uga:CreateSpreadsheetConnections.Item>
+          <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/19rA1zZToNn9h62f9NN-qVmUq2yHlRIbu" ConnectionKey="5c6e0fe3-808c-449f-acb3-ed691272453d" FriendlyName="uipath" FullPathHint="My Drive/uipath" InputMode="Browse">
+            <ugam:DriveItemArgument.Backup>
+              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
+                <usau:BackupSlot.BackupValues>
+                  <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </ugam:DriveItemArgument.Backup>
+            <ugam:DriveItemArgument.DriveId>
               <InArgument x:TypeArguments="x:String" />
-              <InArgument x:TypeArguments="x:String">data</InArgument>
-            </scg:List>
-          </usau:BackupSlot.BackupValues>
-        </usau:BackupSlot>
-      </uga:WriteRangeConnections.FileIdBackup>
-      <uga:WriteRangeConnections.Item>
-        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="021cbcfb-ca18-4d8a-bc77-d15ee0292950" Existing="[NewSpreadSheet]" FullPathHint="My Drive/uipath/data" InputMode="UseExisting">
-          <ugam:DriveItemArgument.ParentIdFullPathHint>
-            <InArgument x:TypeArguments="x:String">
-              <Literal x:TypeArguments="x:String" Value="" />
-            </InArgument>
-          </ugam:DriveItemArgument.ParentIdFullPathHint>
-        </ugam:DriveItemArgument>
-      </uga:WriteRangeConnections.Item>
-      <uga:WriteRangeConnections.RangeWriteModeBackup>
-        <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Overwrite">
-          <usau:BackupSlot.BackupValues>
-            <scg:Dictionary x:TypeArguments="ugase:RangeWriteMode, scg:List(x:Object)" />
-          </usau:BackupSlot.BackupValues>
-        </usau:BackupSlot>
-      </uga:WriteRangeConnections.RangeWriteModeBackup>
-    </uga:WriteRangeConnections>
-    <Assign sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="Assign_2">
-      <Assign.To>
-        <OutArgument x:TypeArguments="x:String">[NewSheetId]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[NewSpreadsheet.Id]</InArgument>
-      </Assign.Value>
-    </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="449.6,165.6" sap2010:WorkflowViewState.IdRef="Assign_1">
-      <Assign.To>
-        <OutArgument x:TypeArguments="x:String">[out_UploadedLink]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="x:String">["https://drive.google.com/file/d/"+NewSheetId+"/view?usp=sharing"]</InArgument>
-      </Assign.Value>
-    </Assign>
+            </ugam:DriveItemArgument.DriveId>
+            <ugam:DriveItemArgument.ParentIdFullPathHint>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String" Value="" />
+              </InArgument>
+            </ugam:DriveItemArgument.ParentIdFullPathHint>
+          </ugam:DriveItemArgument>
+        </uga:CreateSpreadsheetConnections.Item>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uga:CreateSpreadsheetConnections>
+      <uga:WriteRangeConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" AuthScopesInvalid="False" ConnectionId="021cbcfb-ca18-4d8a-bc77-d15ee0292950" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="False" ItemSelectionMode="UseExisting" Range="Sheet1" RowPosition="0" Source="[in_Data]" Spreadsheet="[NewSpreadSheet]" TemplateBrowserItemFriendlyName="data" TemplateBrowserItemId="https://docs.google.com/spreadsheets/d/1imGqmMdPWeZ7wAUjePFItPdewdLmkxLmcOqwVXADquc/edit?usp=drivesdk" UseConnectionService="True" WorkingWithTemplateSpreadsheet="True" WriteMode="Overwrite">
+        <uga:WriteRangeConnections.FileIdBackup>
+          <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UseExisting">
+            <usau:BackupSlot.BackupValues>
+              <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
+                <InArgument x:TypeArguments="x:String">https://docs.google.com/spreadsheets/d/1imGqmMdPWeZ7wAUjePFItPdewdLmkxLmcOqwVXADquc/edit?usp=drivesdk</InArgument>
+                <InArgument x:TypeArguments="x:String" />
+                <InArgument x:TypeArguments="x:String">data</InArgument>
+              </scg:List>
+            </usau:BackupSlot.BackupValues>
+          </usau:BackupSlot>
+        </uga:WriteRangeConnections.FileIdBackup>
+        <uga:WriteRangeConnections.Item>
+          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="021cbcfb-ca18-4d8a-bc77-d15ee0292950" Existing="[NewSpreadSheet]" FullPathHint="My Drive/uipath/data" InputMode="UseExisting">
+            <ugam:DriveItemArgument.ParentIdFullPathHint>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String" Value="" />
+              </InArgument>
+            </ugam:DriveItemArgument.ParentIdFullPathHint>
+          </ugam:DriveItemArgument>
+        </uga:WriteRangeConnections.Item>
+        <uga:WriteRangeConnections.RangeWriteModeBackup>
+          <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Overwrite">
+            <usau:BackupSlot.BackupValues>
+              <scg:Dictionary x:TypeArguments="ugase:RangeWriteMode, scg:List(x:Object)" />
+            </usau:BackupSlot.BackupValues>
+          </usau:BackupSlot>
+        </uga:WriteRangeConnections.RangeWriteModeBackup>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uga:WriteRangeConnections>
+      <Assign sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[NewSheetId]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[NewSpreadsheet.Id]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[out_UploadedLink]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">["https://drive.google.com/file/d/"+NewSheetId+"/view?usp=sharing"]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+    </Sequence>
   </Sequence>
 </Activity>

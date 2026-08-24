@@ -38,6 +38,7 @@
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -93,7 +94,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="LoginFlow" sap:VirtualizedContainerService.HintSize="866.8000000000001,1201.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="LoginFlow" sap:VirtualizedContainerService.HintSize="762.4000000000001,431.65666666666664" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="outdictconfig">
         <sap:WorkflowViewStateService.ViewState>
@@ -109,88 +110,104 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome LG.  Udemy Business" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,1155.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6cc87475-71a6-4749-b130-d6774100a4bb" Version="V2">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,984" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="EnvironmentReader - Invoke Workflow File (EnvironmentReader.xaml)" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="EnvironmentReader.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="out_dictConfig">[outdictconfig]</OutArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-            </ui:InvokeWorkflowFile>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT userId'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Text="[outdictconfig(&quot;USER_ID&quot;)]" Version="V5">
-              <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="gGtbhkPpLEWkkdGRYMvk7A" DesignTimeRectangle="295, 495, 425, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='userId' tag='INPUT' /&gt;" Guid="b57a6699-6181-4dc5-89f7-7e713640319a" InformativeScreenshot="bdf7d7df8a4a0aeb2c6e8c29eb1ab7d6.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/Jn79dX9KnkOToZdHjeUrXQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-              </uix:NTypeInto.Target>
-              <uix:NTypeInto.VerifyOptions>
-                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
-                  <uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionTypeIntoOptions.Retry>
-                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                </uix:VerifyExecutionTypeIntoOptions>
-              </uix:NTypeInto.VerifyOptions>
-            </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Text="[outdictconfig(&quot;PASSWORD&quot;)]" Version="V5">
-              <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="yDc26W4jC0aTDMBItigzzw" DesignTimeRectangle="295, 554, 425, 44" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="3eec389e-bed3-45a3-8c0e-706a2a4baa3d" InformativeScreenshot="e98dcb4b09aab8cc21512f98db750637.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/fnZ3HFOwwEq3mt7YUAJDQQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-              </uix:NTypeInto.Target>
-              <uix:NTypeInto.VerifyOptions>
-                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
-                  <uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionTypeIntoOptions.Retry>
-                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                </uix:VerifyExecutionTypeIntoOptions>
-              </uix:NTypeInto.VerifyOptions>
-            </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SIGN IN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,256.8" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Version="V5">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="gKKCvqAeYUuvIfjT5di9-A" DesignTimeRectangle="295, 613, 425, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="10fb2afa-7b44-4003-a233-9116bdec862b" InformativeScreenshot="84a1ec18b3283893654e465c8c8927d2.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/M75cpguOUEOyW0HITtnYzQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions Mode="Appears">
-                  <uix:VerifyExecutionOptions.Target>
-                    <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="m-__ZYX6MkSGjymLC3Mxzg" DesignTimeRectangle="297, 615, 425, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="1c4ae170-625f-472c-b851-a87c355f1e5b" InformativeScreenshot="649008604d625ece61a3e0ea64dd1b4b.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/3Rm4MjT3G0aLLLTnqZ2TNA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                  </uix:VerifyExecutionOptions.Target>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.OCREngine>
-        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
-          <ActivityFunc.Argument>
-            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
-          </ActivityFunc.Argument>
-        </ActivityFunc>
-      </uix:NApplicationCard.OCREngine>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-34, 0, 1014, 1023" BrowserType="Chrome" ContentHash="EmUvoPhTv0aUiL2Po2c-Ig" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAApCAYAAACMeY82AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAgRSURBVGhD3VprbBRVFIZEFNtJiCCIIYWdBCI/JEYSfqCoPMOU7jUhAgpqSBWSonWn4CMkqBgQEkUR5QcklgamFBFEHoLsVlLqi4KkJDSALaAQXlUMj+zsbrdLu9d8d++dzt7Obme2jaSe5Mv2MXNyz7fnfuecO9Onz120SMA3LKL7Aqau1pi6et3U1bgHNMf04YNkn73Swrp6j6mrL5i6etHUVZojfpL99koDGRHdt4p/y3KQrgEfsu9eaRHdN9/U1XY5QK+I6r4Zsu9eZ9jzXCs6BegRLdHAiMGy/15nEd33pkNwuaDB1NX+sv//1PL9lf3ySeWAPH9VQT4xRrqGf+vDwoepq0ccgssFFRcXP9I3fYUpK6wu7F8U0h4iQc1HgtpItygKaYrsy9GUoqq8fGIUK8TYpxDjmkKMNoUYSQ9YAz98uzQ7BOcZ0CF5nSDAH9KWkqBWR4KaSYJa0gPiJKhNln12MoUYoxVi1PDAaC7II5VF8BUtK3iyu5WFoyVWVvCofZ0kNP15EtQukKBGc8RVZJXdZydTiDFGIcYlOUCPCIst04P60RjVfQPgc9qOOX39IW0B/4blIL2gFr5kDiyDVijEaHQI0CuOYcthv5u6uschuFywQ6yTBLWJfHvIAXqCP6itTmdAMoUYy7qzTWzYBOa5fjQ6BOcZyDSsEeKJb1YOLgck/SEtc0/Ds+O8PbD8oi2ukXYfqSyBT+x5Sz8CI7whnZB49A3fRPj0h7QJXBBZYDMOTnMFB0LuZNWPfH/lUwoxWhFQXuFmOnzWNjr3/R/oglWHXWFCyV5BSPj+oq/GwmdEVxcIMqIf+2lLRSnHa7SlfFFGRFdPpWZpgZ2Q66Ih8we1tYKIJXUBuqJ+eZdYWb+cvnNsiUzISZmDNFOIUSayYkpgPz17+TZ1a4m2dlr09kGRKefz/FsHcf3YiIDCCx+kbWdq5dsyW6KFxjbMt5NyRPQfvLzSZ757gh6/fky+M6Mlk0l66Eo1nXZgoiCkQubAMux3hRjbQQgyo/lmTPaX0UDGyi0nWFbxDNkHf7d0Xz9TV+tZQK8Po8nwP/KtWa3t7K/ULBmS0o+A+gnWOaNae0CIKTJkbcMaFqhbw7Uv1sxhhKBKyTxYZq8uxas6vsmjp/+m6785lRGfbm9g2dR/WoVNP4y34BMpLvQjsmxcx6JuXqGtoY00UVPeCXdOHLCuazt92CJEDHRadSH0445dP7Aldl/YRfde+JbWXquxCLocuZT6+8XdFvD7nEMzmX5o1YWPyTxYxnuPNgRW/n2TtajZS0O0/5RNLOBMkAS1FVoEnwiCZUdpAdMMYQg8/MpAapYMlTCExquWWte1HlzHMsvU1YSlHyFtsSyOIAXbYMqBp+my4x33bzu3lW0r/M8Oft9ZZJvMg2W8Raf3Ti6nJ8/fsJyCEGSAEyCiA5+tTKsuEFToB3zysw8WaOLHzZbP+M7VNPpRYWesmM6yQlhs3WyhHw3YfvBJgtpOmRA7McgAGLIEmZOhugA7szZk6BuEfkAT3BiIG+xPL7doyIRPnGylCBlK2/6sl2/PasnobXuF2QhB5fpxziE4BmRI463f2f3xtrilFU5ApqUzIJlCjJMICJXCjUhBdJElcv8hDXSp84+yUd4ENdHCSq+oMCjd8Ik9n607nVntp7E7qWJwM34jW3bE0cvIHFiGFMfehx6gWghDBuw/eqkTNu49Q8e8vNNeVSzk+atmwad9oMN2QJAwCCq2BUqwExJ1X7PrbeU2ESv1PQ6ffHaRg7Ow6JeF1tpRjqEf8jUc2Qc6TKVo10FI6LfLqYUnk0wj7ptUngZojL2iSGjFmQl88hN1Jop2oYR+QFDRlzhBVBUbGpFt2O/oGxyCYxAlWNiWpopsGVLXlX58iIAgkH80h5lDbAnoiUPQ2XASAx18YhAThOBbFyTH1s91asuzYQ/0g88vrCFzAvQDTZcwdLDyNQLodGUO0oyfe9Cxr+6i4ViCOfy54S/HLdEF2ECHEZ0f9bHUb798KkVI9DbrRxyCzohIQH0Xa+QnYRn1A+UUfQcMgsp7DSdgBpopc2AZziwUYlxF8KIhQ5XBz14JQemGTz7QRVhAy8YxImBounhf4Rb2gW6GQ3AWQIAQVKk9lxHPqh9ioEPwEMub4Th978vjnsmAj46Bjj1uYFsDWwSCysgoGyUH3BWabQPdaofgGKAVaMiQGehUUW3ka2w4I3OQZhjT2bfLB7pM1cMFOg10ADJEqhpecESss6vzj+Lal1iVySKkAu4GOkGKQ6Bu0XmgE/AmohYiAfUzrBOn4tn0wyMs/RBPE/CZ+kNqoGMNWTeB0/h58MkbMqYf3UU04HsOPuWBrhtoEvMLHpMoxPicYw1+Fyfr7ECom6gRLEd031Q5sBzRjjcE4JM/YpCD84o4TujhD62BQowNmMpxZMo/t4OQeQ7BecV5xi43lEmH4HJBIx6Ow2e2gc4lkF0fiGaMZ4fBD8Qww+HTACEbHAJ0CxxE19jJgPH3PeTgcgF7Qsf1o8khSLe4IQ9yXCoEEVN5YuwDIbk8bghzIopFVyqMN2Q98UDb9UCXAciIJnSkuN+pTedEICFElkzCH8d7AfoMlFZLlSXrwSd01kDHR/7xHuFDZjkRYTeeKaPxKf+vR6wHn9DViyd0vdpMXa1yCM4r2jEpy757naUNdN0DRPnuvv/RE2Yf6LqBBtF79HrjbxbKAbpFAtvtf0MGzNTVLxzeJ82GFv5qZhVGfHGqfjftX1xGLdFldVzWAAAAAElFTkSuQmCC" InformativeScreenshot="0d14af53ade39a6183f192a982c5a3d9.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/q4I31_lKCUK5MiZjpABvYg" Selector="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" Url="https://dokokin.fjpservice.com/login?logout=true&amp;url=%2Fhome" Version="V3">
-          <uix:TargetApp.Arguments>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.Arguments>
-          <uix:TargetApp.WorkingDirectory>
-            <InArgument x:TypeArguments="x:String" />
-          </uix:TargetApp.WorkingDirectory>
-        </uix:TargetApp>
-      </uix:NApplicationCard.TargetApp>
-    </uix:NApplicationCard>
+    <Sequence DisplayName="LoginFlow" sap:VirtualizedContainerService.HintSize="449.6,131.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome LG.  Udemy Business" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6cc87475-71a6-4749-b130-d6774100a4bb" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,984" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="EnvironmentReader - Invoke Workflow File (EnvironmentReader.xaml)" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="EnvironmentReader.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="out_dictConfig">[outdictconfig]</OutArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT userId'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Text="[outdictconfig(&quot;USER_ID&quot;)]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="gGtbhkPpLEWkkdGRYMvk7A" DesignTimeRectangle="295, 495, 425, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='userId' tag='INPUT' /&gt;" Guid="b57a6699-6181-4dc5-89f7-7e713640319a" InformativeScreenshot="bdf7d7df8a4a0aeb2c6e8c29eb1ab7d6.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/Jn79dX9KnkOToZdHjeUrXQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Text="[outdictconfig(&quot;PASSWORD&quot;)]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="yDc26W4jC0aTDMBItigzzw" DesignTimeRectangle="295, 554, 425, 44" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="3eec389e-bed3-45a3-8c0e-706a2a4baa3d" InformativeScreenshot="e98dcb4b09aab8cc21512f98db750637.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/fnZ3HFOwwEq3mt7YUAJDQQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SIGN IN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,256.8" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6cc87475-71a6-4749-b130-d6774100a4bb" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="gKKCvqAeYUuvIfjT5di9-A" DesignTimeRectangle="295, 613, 425, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="10fb2afa-7b44-4003-a233-9116bdec862b" InformativeScreenshot="84a1ec18b3283893654e465c8c8927d2.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/M75cpguOUEOyW0HITtnYzQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="dokokin.fjpservice.com/login" ContentHash="m-__ZYX6MkSGjymLC3Mxzg" DesignTimeRectangle="297, 615, 425, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="1c4ae170-625f-472c-b851-a87c355f1e5b" InformativeScreenshot="649008604d625ece61a3e0ea64dd1b4b.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/3Rm4MjT3G0aLLLTnqZ2TNA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dokokin Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:VerifyExecutionOptions.Target>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-34, 0, 1014, 1023" BrowserType="Chrome" ContentHash="EmUvoPhTv0aUiL2Po2c-Ig" IconBase64="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" InformativeScreenshot="0d14af53ade39a6183f192a982c5a3d9.jpg" Reference="nCFTkx-kSUqniW2F95ecPQ/q4I31_lKCUK5MiZjpABvYg" Selector="&lt;html app='chrome.exe' title='Home - Dokokin Portal' /&gt;" Url="https://dokokin.fjpservice.com/login?logout=true&amp;url=%2Fhome" Version="V3">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
   </Sequence>
 </Activity>

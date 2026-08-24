@@ -102,13 +102,13 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="LoginFlow" sap:VirtualizedContainerService.HintSize="866.8000000000001,1327.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="LoginFlow" sap:VirtualizedContainerService.HintSize="756.4000000000001,1327.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="520,1304" sap2010:WorkflowViewState.IdRef="Sequence_11">
+    <Sequence DisplayName="ProcessDataWeb" sap:VirtualizedContainerService.HintSize="520,1304" sap2010:WorkflowViewState.IdRef="Sequence_11">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
